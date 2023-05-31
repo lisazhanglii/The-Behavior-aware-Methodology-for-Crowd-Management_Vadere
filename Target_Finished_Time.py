@@ -1,7 +1,8 @@
 import glob
 import os
 
-folder_path = "/Users/zhangyixin/CognitionAndBehavior/output"
+with open('folder_path', 'r') as f:
+    folder_path = f.read().strip()
 files_path = os.path.join(folder_path, '*')
 a = [0.0] * 100
 b = []

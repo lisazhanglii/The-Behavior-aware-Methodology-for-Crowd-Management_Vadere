@@ -1,5 +1,6 @@
 import glob
 import os
+
 id_list=[]
 selected_id_list=[]
 unselected_id_list=[]
@@ -12,7 +13,8 @@ max_selected = 0.0
 max_unselected=0.0
 min_unselected = 1000.0
 min_selected = 1000.0
-folder_path = "/Users/zhangyixin/CognitionAndBehavior/output"
+with open('folder_path', 'r') as f:
+    folder_path = f.read().strip()
 files_path = os.path.join(folder_path, '*')
 files = sorted(glob.iglob(files_path), key=os.path.getctime, reverse=True)
 folder_path = os.path.join(files[0],'result.txt')

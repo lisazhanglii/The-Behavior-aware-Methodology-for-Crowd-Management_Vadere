@@ -1,5 +1,7 @@
 import json
 import random
+
+
 id_list = []
 number_string =input('intput the id you do not want to change:')
 number_string = number_string.replace('[','').replace(']','')
