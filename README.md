@@ -19,14 +19,22 @@ Because there are limitations in setting large-scale attributes (such as target 
 
 DEMO URL LINK:https://youtu.be/jApC8Nh8fM0
 
-## Running this project
+## Running this project(example in the thesis)
 
-1. put the file of output file into [folder_path](./folder_path)
-2. paste Topography data to pedestrian.json
-3. use [Change_All_Speed.py](./Change_All_Speed.py) to set speed range for every individual(pedestrian.json will then be updated automatically)
+1. put the file of output file into [folder_path](./folder_path);
+2. paste Topography data to pedestrian.json;
+3. use [Change_All_Speed.py](./Change_All_Speed.py) to set speed range(1.5-1.6) for every individual([pedestrian.json](./pedestrian.json) will then be updated automatically);
 ![Example Image](./Picture1.png)
 
-4. 
+4. use [Random_Selected_Change_Speed.py](./Random_Selected_Change_Speed.py) to randomly select 500 individuals as elderly and set their speed range to 1.0-1.3([selected.json](./selected.json) will automatically update the id and [pedestrian.json](./pedestrian.json) will automatically update the speed );
+5. change the target of all the individuals to their closest target by running [To_Closest_Target.py](./To_Closest_Target.py);
+6. copy and paste the new data in pedestrian.json to Topography in Vadere to run the experiments. Then use [Multi_Individuals_Time.py](./Multi_Individuals_Time.py) to get the result. Copy and paste the id in [selected.json](./selected.json) as id input;
+![Example Image](./Picture2.png)
+7. get the results of mixed group. The finish time of each target could be looked up in [Target_Finished_Time.py](./Target_Finished_Time.py);
+8. change the target of the elderly to target 1 and others to their closest target except target 1 by running [Go_Cloest_3_Targets.py](./Go_Cloest_3_Targets.py). Copy and paste the id in [selected.json](./selected.json) as id input. The target in [pedestrian.json](./pedestrian.json) will automatically be updated;
+9. copy and paste the new data in pedestrian.json to Topography in Vadere to run the experiments. Then use [Multi_Individuals_Time.py](./Multi_Individuals_Time.py) to get the result. Copy and paste the id in [selected.json](./selected.json) as id input;
+10. get the results of separate group. The finish time of each target could be looked up in [Target_Finished_Time.py](./Target_Finished_Time.py);
+11. visualize the result by putting the data into [Visualization.py](./Visualization.py).
 
 
 ## Brief Explanation
