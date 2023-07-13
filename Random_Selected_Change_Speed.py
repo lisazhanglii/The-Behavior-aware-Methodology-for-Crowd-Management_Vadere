@@ -1,6 +1,7 @@
 import json
 import random
 
+random.seed(1)
 id_list = []
 number_string =input('how many people do you want to change:')
 number = int(number_string)
