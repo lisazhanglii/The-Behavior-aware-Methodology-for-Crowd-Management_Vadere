@@ -3,13 +3,13 @@ import plotly.graph_objects as go
 animals=['elderly people average time', 'normal people average time','average time of all','max time of all','min time of all', 'target1 time', 'target2 time','target3 time','target4 time']
 
 fig = go.Figure(data=[
-    go.Bar(name='control group', x=animals, y=[ 71.03006618297509,55.87540326356676, 60.46494382062561,87.06156609471921,33.53230999216885,86.32714604306905,84.47645315428491, 86.09329480338532,86.05695909053276]),
-    go.Bar(name='experimental group', x=animals, y=[ 84.24787463042958 ,56.629830420819765,  64.99386561452353,115.66457818734484,33.42727853570953, 115.00966581128039,79.29743705551918,65.5873104326152,78.0290610158351])
+    go.Bar(name='1A', x=animals, y=[ 149.86777268885785,80.90661410593758, 98.10895740615246,201.05943159974342,41.90069788631746,201.05943159974342,186.69418143435564,194.75466769210482,194.69235075844935]),
+    go.Bar(name='1B', x=animals, y=[ 154.31472688320747,72.3733452271568,  92.813601839818,199.2776749110113,42.19475878906342, 198.05756647597443,98.5361291088928,87.92504386133656, 98.03412212468199])
 ])
 # Change the bar mode
 fig.update_layout(barmode='group')
 fig.update_layout(
-    title_text='Comparison between Experiment 3 & Experiment 4',
+    title_text='Comparison between Goup 1A and 1B',
     yaxis_title="timestep",
     font=dict(size=35)  # Adjust the font size as desired
 )
