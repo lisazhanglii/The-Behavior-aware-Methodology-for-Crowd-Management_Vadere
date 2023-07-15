@@ -1,7 +1,7 @@
 import json
 import random
 
-
+random.seed(1)
 id_list = []
 number_string =input('intput the id you want to change:')
 number_string = number_string.replace('[','').replace(']','')

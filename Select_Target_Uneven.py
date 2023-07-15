@@ -7,7 +7,7 @@ random.seed(1)
 
 def is_in_left_top_center(x, y):
     """检查坐标是否在左上角四分之一区的中心的30*30矩阵内"""
-    return 35 <= x <= 50 and 50 <= y <= 65
+    return 45 <= x <= 50 and 50 <= y <= 55
 
 
 def is_in_left_top_quarter(x, y):

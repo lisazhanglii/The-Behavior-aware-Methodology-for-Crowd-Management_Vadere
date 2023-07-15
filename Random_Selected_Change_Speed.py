@@ -20,14 +20,14 @@ with open('pedestrian.json', encoding='utf-8') as a:
     print(selected)
     with open('selected.json', 'w',encoding="utf-8") as file:
         json.dump(selected, file)
-    # for y in range(0,len(x)):
-    #     if (data['dynamicElements'][int(y)]['attributes']['id'] in selected):
-    #
-    #         data['dynamicElements'][int(y)]['freeFlowSpeed']=random.uniform(n,m)
+    for y in range(0,len(x)):
+        if (data['dynamicElements'][int(y)]['attributes']['id'] in selected):
+
+            data['dynamicElements'][int(y)]['freeFlowSpeed']=random.uniform(n,m)
 
 # with open('elderly.json', 'w') as file:
 #     json.dump(selected, file)
-# with open('pedestrian.json', 'w') as file:
-#     json.dump(data, file, indent=2)
-#     print("Finihsed!")
+with open('pedestrian.json', 'w') as file:
+    json.dump(data, file, indent=2)
+    print("Finihsed!")
 

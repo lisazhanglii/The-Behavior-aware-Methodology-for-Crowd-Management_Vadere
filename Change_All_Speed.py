@@ -1,6 +1,6 @@
 import json
 import random
-
+random.seed(1)
 number_string =input('input the min speed:')
 n = float(number_string)
 number_string =input('input the max speed:')
