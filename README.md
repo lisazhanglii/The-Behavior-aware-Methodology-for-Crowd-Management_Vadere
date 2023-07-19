@@ -19,7 +19,20 @@ Because there are limitations in setting large-scale attributes (such as target 
 
 DEMO URL LINK:https://youtu.be/jApC8Nh8fM0
 
-## Running this project(example in the thesis)
+## Running this project(examples in the thesis)
+The json files of 12 experiments in the thesis are preserved in this repository in the format of scene(number)_strategy(character)_json, and users can easily replicate the results through simple operations.
+1. copy the json file to the Topography part of Vadere simulator
+2. In the Data output, add files result.txt and result2.txt
+3. change the Data Key of result.txt to EventtimePedestrianIdKey, and change the processors to '1'
+4. change the Data Key of result2.txt to EventtimePedestrianIdKey, and change the processors to '2'
+5. click "run selected scenarios" button
+6. use [Multi_Individuals_Time.py](./Multi_Individuals_Time.py) to get the result. Copy and paste the id in [selected.json](./selected.json) as id input
+7. use [Target_Finished_Time.py](./Target_Finished_Time.py) to get finish time of each target 
+8. visualize the result by putting the data into [Visualization.py](./Visualization.py).
+
+
+
+## Running this project(customized)
 
 1. put the file of output file into [folder_path](./folder_path);
 2. paste Topography data to pedestrian.json;
