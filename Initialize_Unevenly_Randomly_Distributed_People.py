@@ -23,7 +23,7 @@ for person in people:
     while True:
         # 根据概率选择区域
         region = random.choices(["upper_left", "upper_right", "lower_left", "lower_right"],
-                                weights=[0.4, 0.25, 0.25, 0.1], k=1)[0]
+                                weights=[0.75, 0.1, 0.1, 0.05], k=1)[0]
 
         if region == "upper_left":
             x = random.uniform(0.01, 50)  # 考虑到小方框
